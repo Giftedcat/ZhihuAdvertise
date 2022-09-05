@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="38sp"
+            android:text="测试文本"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/iv_test"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_advertise"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.giftedcat.zhihuadvertise.view.TransferImage
+            android:id="@+id/ti_advertise"
+            android:src="@mipmap/ic_empty_photo"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/tv_jump"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="200dp"
+            android:textColor="@color/white"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="点击跳转至详情页或第三方应用"
+            android:textSize="15sp"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_jump_test"/>
+
+        <TextView
+            android:id="@+id/tv_skip"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="跳过 5"
+            android:textSize="15sp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/bg_skip_test"/>
+
+    </FrameLayout>
+
+</FrameLayout>
