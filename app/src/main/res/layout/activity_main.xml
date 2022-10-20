@@ -35,7 +35,6 @@
         <com.giftedcat.zhihuadvertise.view.TransferImage
             android:id="@+id/ti_advertise"
             android:src="@mipmap/ic_empty_photo"
-            android:scaleType="centerCrop"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 

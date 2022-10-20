@@ -126,20 +126,6 @@ public class MainActivity extends BaseActivity {
             } else {
                 tiAdvertise.setImageBitmap(BitmapFactory.decodeFile(localFile.getAbsolutePath()));
             }
-            tiAdvertise.setOnTransferListener(new TransferImage.OnTransferListener() {
-                @Override
-                public void onTransferStart(int state, int cate, int stage) {
-                }
-
-                @Override
-                public void onTransferUpdate(int state, float fraction) {
-                }
-
-                @Override
-                public void onTransferComplete(int state, int cate, int stage) {
-                    flAdvertise.setVisibility(View.GONE);
-                }
-            });
 
             countdown = MAX_COUNT_DOWNTIME;
             handler.sendEmptyMessageDelayed(0, 1000);
